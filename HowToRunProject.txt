@@ -1,0 +1,12 @@
+/************ Rohit AK ************/
+/************ HOW TO RUN PROJECT ************/
+1. Open project folder.
+2. Type "cmd" in address bar and hit enter.
+3. Type "python manage.py runserver" in cmd and hit enter.
+4. Copy link "http://127.0.0.1:8000/" from cmd.
+5. Paste link in browser and hit enter.
+
+/************ HOW TO CLOSE PROJECT ************/
+1. Close browser
+2. In cmd, press "ctrl + c" to close running process
+3. Close cmd

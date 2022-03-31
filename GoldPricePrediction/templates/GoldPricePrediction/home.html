@@ -1,0 +1,64 @@
+{% extends 'GoldPricePrediction/base.html' %} {% block title %} Home-Page
+{%endblock title %} {% block GOTO %}
+<li class="nav-item">
+  <a class="nav-link" href="/information">Information</a>
+</li>
+{% endblock GOTO %} {% block body %}
+<div class="Home-Page">
+  {% autoescape off %}
+  <div class="Top-Container">
+    <h1 class="Top-Heading">SPDR Gold Shares (GLD)</h1>
+    <p class="Top-paragraph">
+      NYSEArca - NYSEArca Delayed Price. Currency in USD
+    </p>
+
+    <div class="Wrapper">
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text">Predicted price {{NextDate}} NYC</p>
+          <h5 class="card-title">$ {{ PredictedPrice }}</h5>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text">Signal (Buy/No Position)</p>
+          <h5 class="card-title">{{ Signal }}</h5>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text">Close Price {{ ClosingDate }} NYC</p>
+          <h5 class="card-title">$ {{ ClosingPrice }}</h5>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text">Moving Average(3 Days)</p>
+          <h5 class="card-title">$ {{ S_3 }}</h5>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text">Moving Average(9 Days)</p>
+          <h5 class="card-title">$ {{ S_9 }}</h5>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text">Sharpe Ratio</p>
+          <h5 class="card-title">{{ SharpeRatio }}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2 class="h2-h3">Gold ETF Price Series</h2>
+  {{ ClosingPricePlot_div }}
+  <hr />
+  <h2 class="h2-h3">Prediction Model Plot</h2>
+  {{ PredictionPlot_div }}
+  <hr />
+  <h2 class="h2-h3">Cumulative Returns (in %)</h2>
+  {{ CumulativeReturns_div }}
+  {% endautoescape %}
+</div>
+{% endblock body %}

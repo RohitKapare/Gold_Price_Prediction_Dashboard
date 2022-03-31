@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: "Merriweather", sans-serif;
+    color: #7f7f7f;
+}
+hr {
+    border-color: #bcdfdf;
+    border-width: 5px;
+    border-style: none;
+    border-top-style: dotted;
+    width: 5%;
+    margin: auto;
+}  
+p {
+    line-height: 2;
+}
+h1 {
+    /* color: blueviolet; */
+    color: #66bfbf;
+}
+.h2-h3 {
+    color: #11999e;
+    padding: 0;
+    margin: 70px 0 0 0;
+    font-family: "Montserrat", sans-serif;
+}
+.navbar-dark .navbar-brand {
+    color: #FFD700;
+}
+.Top-Container {
+    margin: 0;
+    height: 100vh;
+    background-color: #e4f9f5;
+}
+.Top-Heading {
+    padding: 15vh 0 0 0;
+}
+.Top-paragraph {
+    color: #66bfbf;
+    margin: 0;
+}
+.Wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 5vh 20vw 5vh 20vw;
+}
+.card {
+    flex: 0 0 32%;
+    height: 20vh;
+    margin-bottom: 5px;
+}
+.card-text {
+    color: #40514e;
+}
+.card-title {
+    color: #11999e;
+}
+.footer { 
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #343a40;
+}
+.footer p {
+    margin: 0;
+}
+
+/* Information-Page */
+.set {
+    display: inline-block;
+    height: 18.75rem; /*300/16=18.75rem*/
+    width: 60rem;
+} 
